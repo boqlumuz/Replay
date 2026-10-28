@@ -1,0 +1,31 @@
+SADECE TELEFONLA APK ALMA (GitHub ile, ücretsiz)
+
+DOSYALAR (8 adet, hepsi bu klasörde):
+  MainActivity.kt, ReplayService.kt, AndroidManifest.xml,
+  settings.gradle.kts, build.gradle.kts, gradle.properties  -> depoya YÜKLENİR
+  build.yml -> içeriği ".github/workflows/build.yml" dosyasına yapıştırılır
+  KURULUM.txt -> bu yazı (yüklemene gerek yok)
+
+1) github.com'a tarayıcıdan gir (Chrome), ücretsiz hesap aç.
+2) Sağ üst "+" > New repository > ad: replay > Public > Create repository.
+3) "uploading an existing file" bağlantısına dokun. Yukarıdaki 6 dosyayı seç ve yükle > Commit changes.
+   (Dosya seçicide gri görünürse "Tüm dosyalar"ı seç; olmazsa Add file > Create new file ile içeriği yapıştır.)
+4) En son: Add file > Create new file. Ad kutusuna aynen yaz:  .github/workflows/build.yml
+   İçine build.yml içeriğini yapıştır > Commit changes.
+5) "Actions" sekmesi > "Build APK" çalışır (4-6 dk). Yeşil tik = bitti.
+6) Repo ana sayfasında sağda "Releases" > en yeni sürüm > .apk dosyasına dokun, indir, kur.
+   (Bilinmeyen kaynaklardan yükleme iznini ver.)
+
+DERLEME HATASI OLURSA: Actions > kırmızı çarpılı çalışmaya dokun > "Summary" (özet) kısmında
+hata satırları görünür. Onu kopyalayıp bana gönder.
+
+DOSYAYI GÜNCELLEMEK İÇİN: depoda aynı adlı dosyayı yeniden yükle (Add file > Upload files), üzerine yazar.
+Her yüklemede derleme otomatik yeniden başlar, yeni sürüm Releases'a eklenir.
+
+KULLANIM:
+- Ayarları seç, Başlat > izin penceresinde "Tüm ekran / kayıt başlat" de. Uygulama arka plana gider.
+- PUBG'yi aç. İstediğin anda bildirim çubuğunu çek > Kaydet. Son 30/60 saniye Movies/Replay'e yazılır.
+- Sosyal medya ayarı seçtiysen ek olarak Movies/Replay/Export'a platforma uygun kopya yazılır.
+- Kaydedilince çıkan mesaj klibin süresini ve gerçek ortalama fps'ini gösterir (120 olup olmadığını buradan gör).
+
+RAM notu: bellek ≈ bit hızı x süre / 8. Örn. 32 Mbps x 60 sn ≈ 240 MB.
